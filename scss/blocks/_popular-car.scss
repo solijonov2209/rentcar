@@ -1,0 +1,220 @@
+@use "../mixins" as mx;
+.popular-car{
+  padding-bottom: 31px;
+}
+.popular-car__top{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.popular-car__title{
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--secondary-300, #90A3BF);
+font-size: 14px;
+line-height: 150%; 
+letter-spacing: -0.28px;
+}
+.card{
+  max-width: 304px;
+  width: 100%;
+}
+.popular-car__link{
+  display: block;
+  margin-left:  auto;
+  text-decoration: none;
+  // padding: 20px;
+  color: var(--primary-500, #3563E9);
+text-align: right;
+font-size: 12px;
+line-height: normal;
+}
+.popular-car__list{
+  display: flex;
+  align-items: center;
+  @include mx.list-unstyled ();
+  overflow-x: auto;
+}
+.popular-car__item{
+  margin-right: 32px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.popular-car__item:last-child{
+  margin-right: 0;
+}
+.card__top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.card__title{
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--secondary-500, #1A202C);
+font-size: 16px;
+line-height: 150%; /* 24px */
+letter-spacing: -0.32px;
+}
+.card__top svg:hover{
+fill:#ED3F3F;
+}
+.card__desc{
+  color: var(--secondary-300, #90A3BF);
+
+
+font-size: 12px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.24px;
+}
+.card__img{
+  margin: 64px auto;
+}
+.card__list{
+  @include mx.list-unstyled ();
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  margin-bottom: 20px;
+}
+.card__item{
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  color: var(--secondary-300, #90A3BF);
+font-size: 12px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.24px;
+}
+.card__item::before{
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  background-image: url("../../images/gas-station.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px;
+  content: "";
+}
+.card__item:nth-child(2)::before{
+  background-image: url("../../images/role.svg");
+}
+.card__item:nth-child(3)::before{
+  background-image: url("../../images/profile-2user.svg");
+}
+.card__bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.card__big{
+  display: inline-block;
+  color: var(--secondary-500, #1A202C);
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.16px;
+}
+.card__big sub{
+
+  color: var(--secondary-300, #90A3BF);
+font-size: 12px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.12px;
+}
+.card__big-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.card__big-wrapper del{
+  color: var(--secondary-300, #90A3BF);
+  margin-top: 4px;
+font-size: 12px;
+font-weight: 700;
+line-height: normal;
+text-decoration-line: strikethrough;
+}
+.card__bottom-link{
+  max-width: 100px;
+  width: 100%;
+  padding: 10px ;
+  color: var(--primary-0, #FFF);
+  text-align: center;
+  font-size: 12px;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  background: var(--primary-500, #3563E9);
+  text-decoration: none;
+  border-radius: 4px;
+background: var(--primary-500, #3563E9);
+}
+.recom-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.recom-list .popular-car__item{
+  margin-right: 0;
+  margin-bottom: 32px;
+}
+.more{
+  font-style: 14px;
+  display: block;
+  max-width: 120px;
+  margin: 0 auto;
+}
+.rec-box{
+  display: flex;
+}
+.rec-desc{
+  padding-right: 20px;
+}
+ @media only screen and (min-width:1024px) {
+  .popular-car{
+    padding-bottom: 42px;
+  }
+  
+  .popular-car__title{
+    font-size: 16px;
+    padding: 20px;
+  }
+  .popular-car__link{
+    font-size: 16px;
+    padding: 20px;
+  }
+  .card__bottom-link{
+    max-width: 116px;
+    font-size: 16px;
+    padding: 10px;
+  }
+  .card__title{
+    font-size: 20px;
+  }
+  .card__desc{
+    font-size: 16px;
+  }
+  .card__big{
+    font-size: 20px;
+  }
+  .card__item{
+    font-size: 16px;
+  }
+  .recom-list{
+    flex-direction: row;
+    overflow-x: hidden;
+  }
+  .recom-list .popular-car__item:not(:last-child){
+    margin-right: 32px;
+  }
+  .more{
+    max-width: 156px;
+  }
+ }

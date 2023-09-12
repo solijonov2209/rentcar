@@ -1,0 +1,109 @@
+@use "../mixins" as mx;
+
+.hero{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.hero__inner{
+   @include mx.flexbox(row, center, null );
+   overflow-x:unset;
+   overflow-y: hidden;
+   
+  
+   
+}
+
+.hero__card{
+  min-width: 327px;
+  max-width: 327px;
+  width: 100%;
+  padding: 16px;
+  padding-bottom: 86px;
+  background-image: url("../../images/leftcar-mobile.svg");
+  background-repeat: no-repeat;
+  // background-size: 327px;
+  background-position: calc(50% - 10px) calc(50%);
+  background-color:var(--main-blue-bg-color);
+  border-radius: 10px;
+}
+.hero__title-wrapper{
+  max-width: 240px;
+  width: 100%;
+}
+.hero__title{
+  margin-top: 0;margin-bottom: 12px;
+  color: #fff;
+font-size: 16px;
+line-height: 150%; /* 24px */
+letter-spacing: -0.32px;
+}
+.hero__desc{
+  margin-top: 0;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 160%; /* 19.2px */
+}
+.hero__link{
+  display: block;
+  max-width: 128px;
+  width: 100%;
+  padding: 14px 20px;
+
+  color: var(--primary-0, #FFF);
+text-align: center;
+font-size: 12px;
+line-height: normal;
+letter-spacing: -0.24px;
+text-decoration: none;
+  border-radius: 4px;
+background:  #3563E9;
+}
+.hero__card:last-child {
+  margin-left: 32px;
+  background-image: url("../../images/right-car.svg");
+  background-size: 400px;
+  background-position: calc(50% - 10px) calc(50% + 10px);
+  background-repeat:repeat;
+  background-color:  #3563E9;
+}
+.hero__card:last-child .hero__link{
+  background-color: var(--main-blue-bg-color);
+}
+.hero__card:last-child .hero__title-wrapper{
+  max-width: 260px;
+}
+@media only screen and (min-width:1024px) {
+
+  .hero__card{
+    max-width: 640px;
+    padding: 24px;
+    padding-bottom: 112px;
+    background-image: url("../../images/left-car.svg");
+
+  background-position: calc(50% - 5px) calc(50% + 10px);
+
+
+  }
+  .hero__card:last-child {
+    background-position: calc(50% - 10px) calc(50% + 10px);
+  background-size: 640px;
+  }
+  .hero__title-wrapper{
+    max-width: 272px;
+  }
+  .hero__title{
+    font-size: 32px;
+letter-spacing: -0.96px;
+  }
+  .hero__desc{
+    padding-bottom: 20px;
+    font-size: 16px;
+letter-spacing: -0.32px;
+  }
+  .hero__link{
+    max-width: 120px;
+    font-size: 16px;
+letter-spacing: -0.32px;
+  }
+}

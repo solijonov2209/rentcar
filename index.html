@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.min.css">
+  <title>Car Rent </title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__inner">
+        <a href="./index.html" class="site-header__logo-link">
+          <img src="./images/logo.svg" alt="Site logo" class="site-header__logo">
+        </a>
+        <ul class="site-header__list">
+          <li class="site-header__item">
+            <a href="#" class="site-header__link">
+              <img class="site-header__img" width="24" height="24" src="./images/heart.svg" alt="heart logo">
+            </a>
+          </li>
+          <li class="site-header__item">
+            <a href="#" class="site-header__link">
+              <img class="site-header__img" width="24" height="24" src="./images/notification.svg" alt="notification logo">
+            </a>
+          </li>
+          <li class="site-header__item">
+            <a href="#" class="site-header__link">
+              <img class="site-header__img" width="24" height="24" src="./images/setting.svg" alt="setting logo">
+            </a>
+          </li>
+          <li class="site-header__item">
+            <a href="#" class="site-header__link">
+              <img class="site-header__img"src="./images/man.png" alt="man img">
+            </a>
+          </li>
+        </ul>
+        <form class="site-header__form" action="https://echo.htmlacademy.ru" method="GET" autocomplete="off">
+          <input class="site-header__input" type="search" name="user_search" aria-label="Search something here" placeholder="Search something here" required>
+          <button class="site-header__btn" type="button"></button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <!-- Finish Header -->
+  <!-- START MAIN  -->
+  <main class="site-main">
+    <!-- start hero section  -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <h1 class="visually-hidden">You can rent all types of cars from us</h1>
+          <div class="hero__card">
+            <div class="hero__title-wrapper">
+              <h2 class="hero__title">The Best Platform for Car Rental</h2>
+              <p class="hero__desc">Ease of doing a car rental safely and reliably. Of course at a low price.</p>
+            </div>
+            <a href="" class="hero__link">Rental Car</a>
+          </div>
+          
+          <div class="hero__card">
+            <div class="hero__title-wrapper">
+              <h2 class="hero__title">Easy way to rent a car at a low price</h2>
+              <p class="hero__desc">Providing cheap car rental services and safe and comfortable facilities.</p>
+            </div>
+            <a href="" class="hero__link">Rental Car</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- finish hero section  -->
+    <!-- START FILTER SECTION  -->
+    <section class="filter">
+      <div class="container">
+        <div class="fitler__inner">
+          
+          <div class="filter__box">
+            <span class="filter__span">
+              <input type="radio" name="cheked" id="checkbox">
+            </span>
+            <label class="filter__radio-lab" for="checkbox">Pick - Up</label>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <label for="Locations">Locations</label>
+                <select name="user_location" id="Locations">
+                  <option class="value-s" value="time">Semarang</option>
+                  <option class="value-m" value="time">Select your city</option>
+                  
+                </select>
+              </li>
+              <li class="filter__item">
+                <label for="Date">Date</label>
+                <select name="user__data" id="Date">
+                  <option class="value-s" value="time">20 July 2022</option>
+                  <option class="value-m" value="time">Select your date</option>
+                  
+                </select>
+              </li>
+              <li class="filter__item">
+                <label for="Time">Time</label>
+                <select class="filter__select" name="user__time" id="Time">
+                  <option class="value-s" value="time">07.00</option>
+                  <option class="value-m" value="time"> time</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+          <button class="filter__btn" type="button"></button>
+          <div class="filter__box">
+            <span class="filter__span">
+              <input type="radio" name="cheked" id="checkbox2">
+            </span>
+            <label class="filter__radio-lab" for="checkbox2">Drop - Off</label>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <label for="locations">Locations</label>
+                <select name="user_location" id="locations">
+                  <option class="value-s" value="Semarang">Semarang</option>
+                  <option class="value-m" value="time">Select your city</option>
+                </select>
+              </li>
+              <li class="filter__item">
+                <label for="data">Date</label>
+                <select name="user__data" id="data">
+                  <option class="value-s" value="data">21 July 2022</option>
+                  <option class="value-m" value="time">Select your date</option>
+                </select>
+              </li>
+              <li class="filter__item">
+                <label for="time">Time</label>
+                <select name="user__time" id="time">
+                  <option class="value-s" value="time">01.00</option>
+                  <option class="value-m" value="time">time</option>
+                  
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FINISH FILTER SECTION  -->
+  <!-- START POPULAR CAR SECTION  -->
+  <section class="popular-car">
+    <div class="container">
+      <div class="popular-car__top">
+        <h2 class="popular-car__title">Popular Car</h2>
+        <a href="#" class="popular-car__link">View All</a>
+      </div>
+      <ul class="popular-car__list">
+        <li class="popular-car__item card">
+          <div class="card__top">
+            <h3 class="card__title">Koenigsegg</h3>
+            <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path stroke="#90A3BF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.62 20.81c-.34.12-.9.12-1.24 0C8.48 19.82 2 15.69 2 8.69 2 5.6 4.49 3.1 7.56 3.1c1.82 0 3.43.88 4.44 2.24a5.53 5.53 0 0 1 4.44-2.24C19.51 3.1 22 5.6 22 8.69c0 7-6.48 11.13-9.38 12.12Z"/></svg>
+          </div>
+          <p class="card__desc">sport</p> 
+          <img class="card__img" src="./images/car.svg" width="232"  height="72" alt="car image">
+          <ul class="card__list">
+            <li class="card__item">90L</li>
+            <li class="card__item">Manuual</li>
+            <li class="card__item">2 People</li>
+          </ul>
+          <div class="card__bottom">
+            <strong class="card__big">$99.00/<sub>day</sub></strong>
+            <a href="#" class="card__bottom-link">Rent Now</a>
+          </div>
+        </li>
+        <li class="popular-car__item card"><div class="card__top">
+          <h3 class="card__title">Nissan GT - R</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path stroke="#90A3BF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.62 20.81c-.34.12-.9.12-1.24 0C8.48 19.82 2 15.69 2 8.69 2 5.6 4.49 3.1 7.56 3.1c1.82 0 3.43.88 4.44 2.24a5.53 5.53 0 0 1 4.44-2.24C19.51 3.1 22 5.6 22 8.69c0 7-6.48 11.13-9.38 12.12Z"/></svg>
+        </div>
+        <p class="card__desc">sport</p> 
+        <img class="card__img" src="./images/Car (1).svg" width="232"  height="72" alt="car image">
+        <ul class="card__list">
+          <li class="card__item">90L</li>
+          <li class="card__item">Manual</li>
+          <li class="card__item">2 People</li>
+        </ul>
+        <div class="card__bottom">
+          <div class="card__big-wrapper">
+            <strong class="card__big">$80.00/<sub>day</sub></strong>
+            <del>$100.00</del>
+          </div>
+          <a href="#" class="card__bottom-link">Rent Now</a>
+        </div>
+      </li>
+      <li class="popular-car__item card"><div class="card__top">
+        <h3 class="card__title">Rolls - Royce</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path stroke="#90A3BF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.62 20.81c-.34.12-.9.12-1.24 0C8.48 19.82 2 15.69 2 8.69 2 5.6 4.49 3.1 7.56 3.1c1.82 0 3.43.88 4.44 2.24a5.53 5.53 0 0 1 4.44-2.24C19.51 3.1 22 5.6 22 8.69c0 7-6.48 11.13-9.38 12.12Z"/></svg>
+      </div>
+      <p class="card__desc">sedan</p> 
+      <img class="card__img" src="./images/car-1.svg" width="232"  height="72" alt="car image">
+      <ul class="card__list">
+        <li class="card__item">90L</li>
+        <li class="card__item">Manual</li>
+        <li class="card__item">4 People</li>
+      </ul>
+      <div class="card__bottom">
+        <strong class="card__big">$90.00/<sub>day</sub></strong>
+        <a href="#" class="card__bottom-link">Rent Now</a>
+      </div>
+    </li>
+    <li class="popular-car__item card"><div class="card__top">
+      <h3 class="card__title">Nissan GT - R</h3>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path stroke="#90A3BF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.62 20.81c-.34.12-.9.12-1.24 0C8.48 19.82 2 15.69 2 8.69 2 5.6 4.49 3.1 7.56 3.1c1.82 0 3.43.88 4.44 2.24a5.53 5.53 0 0 1 4.44-2.24C19.51 3.1 22 5.6 22 8.69c0 7-6.48 11.13-9.38 12.12Z"/></svg>
+    </div>
+    <p class="card__desc">sport</p> 
+    <img class="card__img" src="./images/Car-1 (1).svg" width="232"  height="72" alt="car image">
+    <ul class="card__list">
+      <li class="card__item">90L</li>
+      <li class="card__item">Manual</li>
+      <li class="card__item">2 People</li>
+    </ul>
+    <div class="card__bottom">
+      <div class="card__big-wrapper">
+        <strong class="card__big">$80.00/<sub>day</sub></strong>
+        <del>$100.00</del>
+      </div>
+      <a href="#" class="card__bottom-link">Rent Now</a>
+    </div>
+  </li>
+</ul>
+</div>
+</section>
+<!-- FINISH POPULAR CAR SECTION  -->
+<!-- START RECOMENDATION CAR SECTION  -->
+<section class="popular-car">
+  <div class="container">
+    <div class="popular-car__top">
+      <h2 class="popular-car__title">Recomendation Car</h2>
+      
+    </div>
+    <ul class="popular-car__list recom-list">
+      <li class="popular-car__item card">
+        <div class="card__top">
+          <h3 class="card__title">All New Rush  </h3>
+          <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path stroke="#90A3BF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.62 20.81c-.34.12-.9.12-1.24 0C8.48 19.82 2 15.69 2 8.69 2 5.6 4.49 3.1 7.56 3.1c1.82 0 3.43.88 4.44 2.24a5.53 5.53 0 0 1 4.44-2.24C19.51 3.1 22 5.6 22 8.69c0 7-6.48 11.13-9.38 12.12Z"/></svg>
+        </div>
+        <p class="card__desc">SUV</p> 
+        <img class="card__img" src="./images/Carrec1.svg" width="232"  height="72" alt="car image">
+        <ul class="card__list">
+          <li class="card__item">90L</li>
+          <li class="card__item">Manuual</li>
+          <li class="card__item">6 People</li>
+        </ul>
+        <div class="card__bottom">
+          <strong class="card__big">$72.00/<sub>day</sub></strong>
+          <a href="#" class="card__bottom-link">Rent Now</a>
+        </div>
+      </li>
+      <li class="popular-car__item card"><div class="card__top">
+        <h3 class="card__title">CR  - V </h3>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path stroke="#90A3BF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.62 20.81c-.34.12-.9.12-1.24 0C8.48 19.82 2 15.69 2 8.69 2 5.6 4.49 3.1 7.56 3.1c1.82 0 3.43.88 4.44 2.24a5.53 5.53 0 0 1 4.44-2.24C19.51 3.1 22 5.6 22 8.69c0 7-6.48 11.13-9.38 12.12Z"/></svg>
+      </div>
+      <p class="card__desc">SUV</p> 
+      <img class="card__img" src="./images/Carrec2.svg" width="232"  height="72" alt="car image">
+      <ul class="card__list">
+        <li class="card__item">90L</li>
+        <li class="card__item">Manual</li>
+        <li class="card__item">6 People</li>
+      </ul>
+      <div class="card__bottom">
+        <div class="card__big-wrapper">
+          <strong class="card__big">$80.00/<sub>day</sub></strong>
+          <del>$100.00</del>
+        </div>
+        <a href="#" class="card__bottom-link">Rent Now</a>
+      </div>
+    </li>
+    <li class="popular-car__item card"><div class="card__top">
+      <h3 class="card__title">All New Terios  </h3>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path stroke="#90A3BF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.62 20.81c-.34.12-.9.12-1.24 0C8.48 19.82 2 15.69 2 8.69 2 5.6 4.49 3.1 7.56 3.1c1.82 0 3.43.88 4.44 2.24a5.53 5.53 0 0 1 4.44-2.24C19.51 3.1 22 5.6 22 8.69c0 7-6.48 11.13-9.38 12.12Z"/></svg>
+    </div>
+    <p class="card__desc">SUV</p> 
+    <img class="card__img" src="./images/Carrec3.svg" width="232"  height="72" alt="car image">
+    <ul class="card__list">
+      <li class="card__item">90L</li>
+      <li class="card__item">Manual</li>
+      <li class="card__item">6 People</li>
+    </ul>
+    <div class="card__bottom">
+      <strong class="card__big">$74.00/<sub>day</sub></strong>
+      <a href="#" class="card__bottom-link">Rent Now</a>
+    </div>
+  </li>
+  <li class="popular-car__item card"><div class="card__top">
+    <h3 class="card__title">CR  - V </h3>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path stroke="#90A3BF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.62 20.81c-.34.12-.9.12-1.24 0C8.48 19.82 2 15.69 2 8.69 2 5.6 4.49 3.1 7.56 3.1c1.82 0 3.43.88 4.44 2.24a5.53 5.53 0 0 1 4.44-2.24C19.51 3.1 22 5.6 22 8.69c0 7-6.48 11.13-9.38 12.12Z"/></svg>
+  </div>
+  <p class="card__desc">SUV</p> 
+  <img class="card__img" src="./images/Carrec4.svg" width="232"  height="72" alt="car image">
+  <ul class="card__list">
+    <li class="card__item">90L</li>
+    <li class="card__item">Manual</li>
+    <li class="card__item">6 People</li>
+  </ul>
+  <div class="card__bottom">
+    <div class="card__big-wrapper">
+      <strong class="card__big">$80.00/<sub>day</sub></strong>
+      <del>$100.00</del>
+    </div>
+    <a href="#" class="card__bottom-link">Rent Now</a>
+  </div>
+</li>
+</ul>
+
+<ul class="popular-car__list recom-list" >
+  <li class="popular-car__item card">
+    <div class="card__top">
+      <h3 class="card__title">MG ZX Exclusice</h3>
+      <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path stroke="#90A3BF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.62 20.81c-.34.12-.9.12-1.24 0C8.48 19.82 2 15.69 2 8.69 2 5.6 4.49 3.1 7.56 3.1c1.82 0 3.43.88 4.44 2.24a5.53 5.53 0 0 1 4.44-2.24C19.51 3.1 22 5.6 22 8.69c0 7-6.48 11.13-9.38 12.12Z"/></svg>
+    </div>
+    <p class="card__desc">Hatchback</p> 
+    <img class="card__img" src="./images/Carrec5.svg" width="232"  height="72" alt="car image">
+    <ul class="card__list">
+      <li class="card__item">90L</li>
+      <li class="card__item">Manuual</li>
+      <li class="card__item">2 People</li>
+    </ul>
+    <div class="card__bottom">
+      <strong class="card__big">$76.00/<sub>day</sub></strong>
+      <a href="#" class="card__bottom-link">Rent Now</a>
+    </div>
+  </li>
+  <li class="popular-car__item card"><div class="card__top">
+    <h3 class="card__title">New MG ZS</h3>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path stroke="#90A3BF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.62 20.81c-.34.12-.9.12-1.24 0C8.48 19.82 2 15.69 2 8.69 2 5.6 4.49 3.1 7.56 3.1c1.82 0 3.43.88 4.44 2.24a5.53 5.53 0 0 1 4.44-2.24C19.51 3.1 22 5.6 22 8.69c0 7-6.48 11.13-9.38 12.12Z"/></svg>
+  </div>
+  <p class="card__desc">SUV</p> 
+  <img class="card__img" src="./images/Carrec6.svg" width="232"  height="72" alt="car image">
+  <ul class="card__list">
+    <li class="card__item">90L</li>
+    <li class="card__item">Manual</li>
+    <li class="card__item">2 People</li>
+  </ul>
+  <div class="card__bottom">
+    <div class="card__big-wrapper">
+      <strong class="card__big">$80.00/<sub>day</sub></strong>
+      <del>$100.00</del>
+    </div>
+    <a href="#" class="card__bottom-link">Rent Now</a>
+  </div>
+</li>
+<li class="popular-car__item card"><div class="card__top">
+  <h3 class="card__title">MG ZX Excite</h3>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path stroke="#90A3BF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.62 20.81c-.34.12-.9.12-1.24 0C8.48 19.82 2 15.69 2 8.69 2 5.6 4.49 3.1 7.56 3.1c1.82 0 3.43.88 4.44 2.24a5.53 5.53 0 0 1 4.44-2.24C19.51 3.1 22 5.6 22 8.69c0 7-6.48 11.13-9.38 12.12Z"/></svg>
+</div>
+<p class="card__desc">Hatchback</p> 
+<img class="card__img" src="./images/Carrec7.svg" width="232"  height="72" alt="car image">
+<ul class="card__list">
+  <li class="card__item">90L</li>
+  <li class="card__item">Manual</li>
+  <li class="card__item">4 People</li>
+</ul>
+<div class="card__bottom">
+  <strong class="card__big">$74.00/<sub>day</sub></strong>
+  <a href="#" class="card__bottom-link">Rent Now</a>
+</div>
+</li>
+<li class="popular-car__item card"><div class="card__top">
+  <h3 class="card__title">New MG ZS</h3>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path stroke="#90A3BF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.62 20.81c-.34.12-.9.12-1.24 0C8.48 19.82 2 15.69 2 8.69 2 5.6 4.49 3.1 7.56 3.1c1.82 0 3.43.88 4.44 2.24a5.53 5.53 0 0 1 4.44-2.24C19.51 3.1 22 5.6 22 8.69c0 7-6.48 11.13-9.38 12.12Z"/></svg>
+</div>
+<p class="card__desc">SUV</p> 
+<img class="card__img" src="./images/Carrec8.svg" width="232"  height="72" alt="car image">
+<ul class="card__list">
+  <li class="card__item">90L</li>
+  <li class="card__item">Manual</li>
+  <li class="card__item">2 People</li>
+</ul>
+<div class="card__bottom">
+  <div class="card__big-wrapper">
+    <strong class="card__big">$80.00/<sub>day</sub></strong>
+    <del>$100.00</del>
+  </div>
+  <a href="#" class="card__bottom-link">Rent Now</a>
+</div>
+</li>
+</ul>
+<div class="rec-box">
+  <a href="#" class="card__bottom-link more">Show more car</a>
+  <p class="card__desc rec-desc">120 Car</p>
+</div>
+</div>
+</section>
+<!-- FINISH RECAMENDATION CAR SECTION  -->
+</main>
+<!-- FINISH MAIN  -->
+<!-- START FOOTER   -->
+<footer class="site-footer footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <ul class="footer__left-list">
+        <li class="footer__left-item">
+          <a href="./index.html" class="site-header__logo-link">
+            <img src="./images/logo.svg" alt="Site logo" class="site-header__logo">
+          </a>
+        </li>
+        <li class="footer__left-item">
+          <p class="footer__desc">Our vision is to provide convenience and help increase your sales business.</p>
+        </li>
+        <li class="footer__left-item">
+          <a class="footer" href="tel:+998905833597">+998 90 583-35-97</a>
+        </li>
+        <li class="footer__left-item">
+          <a href="mailto:morent@gmail.com">morent@gmail.com</a>
+        </li>
+      </ul>
+      <ul class="footer__right-list">
+        <li class="footer__right-item">
+          <strong class="footer__strong">About</strong>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                How it works
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                Featured
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                Partnership
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                
+                Bussiness Relation</a></li>
+              </ul>   
+            </li>
+            <li class="footer__right-item">
+              <strong class="footer__strong">Community</strong>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                 Events
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                Blog
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                 Podcast
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                 Invite a friend
+                  </a>
+                </li>
+              </ul>   
+            </li>
+          </ul>
+        </div>
+        <div class="site-footer__bottom">
+          <ul class="footer__bottom-list">
+            <li class="footer__bottom-item">
+              <a class="footer__bottom-link" href="#" target="_blank">
+                <img src="./images/Twitter.svg" width="24" height="24" alt="logo">
+              </a>
+            </li>
+            <li class="footer__bottom-item">
+              <a class="footer__bottom-link" href="#" target="_blank">
+                <img src="./images/Instagram.svg" width="24" height="24" alt="logo">
+              </a>
+            </li>
+            <li class="footer__bottom-item">
+              <a class="footer__bottom-link" href="#" target="_blank">
+                <img src="./images/LinkedIn.svg" width="24" height="24" alt="logo">
+              </a>
+            </li>
+            <li class="footer__bottom-item">
+              <a class="footer__bottom-link" href="#" target="_blank">
+                <img src="./images/Telegram.svg" width="24" height="24" alt="logo">
+              </a>
+            </li>
+          </ul> 
+          <p class="footer__bottom-desc">©2022 MORENT. All rights reserved</p>
+         
+        </div>
+      </div>
+    </footer>
+  </body>
+  </html>
